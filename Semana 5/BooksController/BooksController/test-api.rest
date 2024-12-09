@@ -1,0 +1,19 @@
+# GET: Obtener todos los libros
+GET http://localhost:5090/api/books
+Content-Type: application/json
+
+###
+# POST: Agregar un nuevo libro
+POST http://localhost:5090/api/books
+Content-Type: application/json
+
+{
+  "title": "The Hobbit",
+  "author": "J.R.R. Tolkien",
+  "year": 1937
+}
+
+###
+# DELETE: Eliminar un libro por título
+DELETE http://localhost:5090/api/books/The Hobbit
+Content-Type: application/json
